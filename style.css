@@ -1,0 +1,168 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: #000000;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#container {
+    display: flex;
+    width: 1600px;
+    height: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#container > div {
+    height: 80%;
+}
+
+.draggableList {
+    width: 30%;
+    height: 100%;
+}
+
+.droppableList {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+}
+
+#background li {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin: 0 5px;
+}
+
+#characterContainer {
+    margin: 20px auto;
+    width: 600px;
+    height: 600px;
+    background: dimgray;
+}
+
+#character {
+    width: 100%;
+    height: 100%;
+    background-image: url(./img/char1.png);
+}
+
+.droppableList ul {
+    margin: auto;
+}
+
+.droppableList li {
+    cursor: pointer;
+    float: left;
+}
+
+#selectCharacter li {
+    width: 70px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.draggableList ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-left: 15px;
+}
+
+.draggableList li {
+    position: relative;
+    width: calc(100% / 2.5);
+    padding: 10px;
+}
+
+#head li {
+    width: calc(100% / 4.5);
+    padding: 30px 0 10px 0;
+}
+
+#head li:nth-of-type(3),
+#head li:nth-of-type(5),
+#head li:nth-of-type(6) {
+    width: calc(100% / 2.5);
+}
+
+#head li:nth-of-type(5) {
+    order: 8;
+}
+
+#head li:nth-of-type(8) {
+    width: calc(100% / 2);
+    order: 3;
+}
+
+#head li:nth-of-type(7) {
+    padding: 50px 0 0 30px;
+}
+
+#pierce li {
+    width: calc(100% / 7);
+}
+
+#hand li {
+    width: calc(100% / 8);
+}
+
+#clothes li {
+    width: calc(100% / 3.5);
+    padding: 20px;
+}
+
+#clothes li:nth-of-type(3) {
+    padding-top: 70px;
+}
+
+#clothes li:nth-of-type(4) {
+    padding-top: 100px;
+}
+
+#shoes li {
+    width: calc(100% / 3.5);
+    padding-top: 20px;
+}
+
+#acc li {
+    width: calc(100% / 8);
+    padding-left: 50px;
+}
+
+.draggable {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.hg-20 {
+    height: 20%;
+}
+
+.hg-30 {
+    height: 30%;
+}
+
+.hg-40 {
+    height: 40%;
+}
+
+.hg-50 {
+    height: 50%;
+}
+
+.hg-60 {
+    height: 60%;
+}
